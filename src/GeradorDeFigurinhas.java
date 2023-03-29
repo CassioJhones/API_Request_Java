@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import javax.imageio.ImageIO;
+import javax.swing.text.AttributeSet.FontAttribute;
+import javax.swing.text.StyledEditorKit.FontFamilyAction;
 
 public class GeradorDeFigurinhas {
     void cria(InputStream inputstream, String nomeArquivo) throws IOException{
@@ -35,7 +37,7 @@ public class GeradorDeFigurinhas {
 
 
         //--ESCREVER FRASE NA NOVA IMAGEM
-        graphics.drawString("Senhor dos Anéis", 50, novaAltura-80);
+        graphics.drawString("USANDO API JAVA", 50, novaAltura-80);
 
 
         //--ESCREVER A NOVA IMAGEM EM ARQUIVO
